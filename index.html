@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <template id="task-template">
+        <div class="task">
+            <span class="task-text"></span>
+            <div class="icon-Container">
+                <ul class="icon-list">
+                    <li><img src="img/up.png" alt="Monter tâche" class="up"></li>
+                    <li><img src="img/down.png" alt="Descendre tâche" class="down"></li>
+                </ul>
+                <img src="img/edit.png" alt="Modifier" class="edit">
+                <img src="img/delete.png" alt="Supprimer" class="delete">
+            </div>
+        </div>
+    </template>
+    <h1>TO DO LIST EN JAVASCRIPT</h1>
+    <input type="text" id="task" placeholder="Saisissez votre tâche (25 caractères max)" size="40" maxlength="25">
+    <button id="add">Ajouter</button>
+    <p>(Double-click gauche pour avancer la tâche // Double-click droit pour reculer la tâche)</p>
+    <main class="container">
+        <div class="colonne" id="todo">
+            <h3>A FAIRE</h3>
+        </div>
+        <div class="colonne" id="in_progress">
+            <h3>EN COURS</h3>
+        </div>
+        <div class="colonne" id="completed">
+            <h3>TERMINEE</h3>
+        </div>
+    </main>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
